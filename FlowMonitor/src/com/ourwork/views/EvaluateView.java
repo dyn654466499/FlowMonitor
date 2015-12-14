@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.ourwork.flowmonitor.R;
 import com.ourwork.utils.CommonUtils;
 
-public class EvaluateView extends Views{
+public class EvaluateView extends BaseView{
     private RatingBar ratingBar_evaluate_whole;
 	private TextView textView_evaluate_wholeNum,textView_evaluate_totalPrice,textView_evaluate_goodsNum;
 	

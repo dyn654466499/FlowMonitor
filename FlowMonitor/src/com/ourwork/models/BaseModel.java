@@ -8,7 +8,7 @@ import android.os.Message;
  * @author 邓耀宁
  *
  */
-public abstract class Models {
+public abstract class BaseModel {
 	/**
 	 * controler的handler
 	 */
@@ -16,7 +16,7 @@ public abstract class Models {
 	/**
 	 * 绑定controler的handler
 	 */
-	public Models(Handler handler) {
+	public BaseModel(Handler handler) {
 		this.handler = handler;
 	}
 	/**

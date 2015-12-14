@@ -41,7 +41,7 @@ import com.ourwork.adapters.ScreeningCheckBoxAdapter;
 import com.ourwork.adapters.GoodsAdapter;
 import com.ourwork.adapters.ScreeningPriceAdapter;
 import com.ourwork.adapters.SmartSortAdapter;
-import com.ourwork.controlers.Controlers;
+import com.ourwork.controlers.BaseControler;
 import com.ourwork.controlers.GoodsControler;
 import com.ourwork.customview.CustomEditText;
 import com.ourwork.flowmonitor.GoodsDetailActivity;
@@ -57,7 +57,7 @@ import com.ourwork.views.RegisterView.ButtonClickListener;
  * @author 邓耀宁
  * 
  */
-public class GoodsView extends Views implements Controlers.ViewChangeListener {
+public class GoodsView extends BaseView implements BaseControler.ViewChangeListener {
 	public static final int VOICE_RECOGNITION_REQUEST_CODE = 0;
 	public static final int SEARCH = 1;
 

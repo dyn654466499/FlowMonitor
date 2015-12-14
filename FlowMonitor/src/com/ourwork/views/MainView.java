@@ -12,7 +12,7 @@ import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class MainView extends Views{
+public class MainView extends BaseView{
 
 	public MainView(Activity mActivity) {
 		super(mActivity);

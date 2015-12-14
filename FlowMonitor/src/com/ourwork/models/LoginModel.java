@@ -8,7 +8,7 @@ import android.os.Message;
  * @author 邓耀宁
  *
  */
-public class LoginModel extends Models{
+public class LoginModel extends BaseModel{
 
 	public LoginModel(Handler handler) {
 		super(handler);

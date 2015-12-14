@@ -3,7 +3,7 @@ package com.ourwork.views;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 
-import com.ourwork.controlers.Controlers;
+import com.ourwork.controlers.BaseControler;
 
 /**
  * view的抽象类，负责初始化并显示UI。
@@ -11,7 +11,7 @@ import com.ourwork.controlers.Controlers;
  *
  */
 @SuppressLint("NewApi") 
-public abstract class Views {
+public abstract class BaseView {
 	/**
 	 * 切勿将Activity设置为static，如在使用startActivityForResult时，原Activity则出现错误。
 	 */
@@ -22,7 +22,7 @@ public abstract class Views {
 	 * 绑定view对应的Activity
 	 */
 
-	public Views(Activity mActivity) {
+	public BaseView(Activity mActivity) {
 		super();
 		this.mActivity = mActivity;
 		isActivityfinish = false;
@@ -55,6 +55,6 @@ public abstract class Views {
 	}
 	
 	public static void setActivityfinish(boolean isActivityfinish) {
-		Views.isActivityfinish = isActivityfinish;
+		BaseView.isActivityfinish = isActivityfinish;
 	}
 }

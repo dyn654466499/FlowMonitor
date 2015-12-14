@@ -12,7 +12,7 @@ import com.ourwork.models.RegisterModel;
  * @author 邓耀宁
  *
  */
-public class RegisterControler extends Controlers{
+public class RegisterControler extends BaseControler{
 
 	/**
 	 * 设置controler的model

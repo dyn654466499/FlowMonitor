@@ -9,7 +9,7 @@ import android.app.Activity;
  * @author 邓耀宁
  *
  */
-public class LoginControler extends Controlers{
+public class LoginControler extends BaseControler{
 
 	/**
 	 * 设置controler的model

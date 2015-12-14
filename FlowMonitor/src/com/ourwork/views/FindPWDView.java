@@ -19,7 +19,7 @@ import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ourwork.controlers.Controlers;
+import com.ourwork.controlers.BaseControler;
 import com.ourwork.controlers.FindPWDControler;
 import com.ourwork.flowmonitor.R;
 import com.ourwork.fragments.PWDFragment;
@@ -32,7 +32,7 @@ import com.ourwork.utils.CommonUtils;
  *
  */
 
-public class FindPWDView extends Views implements Controlers.ViewChangeListener {
+public class FindPWDView extends BaseView implements BaseControler.ViewChangeListener {
 
 	private Button button_findpwd_next,button_getVcode;
 	private TextView textView_findpwd_tips;

@@ -20,7 +20,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
-import com.ourwork.controlers.Controlers;
+import com.ourwork.controlers.BaseControler;
 import com.ourwork.controlers.RegisterControler;
 import com.ourwork.flowmonitor.LoginActivity;
 import com.ourwork.flowmonitor.R;
@@ -28,7 +28,7 @@ import com.ourwork.utils.Commands;
 import com.ourwork.utils.DialogUtils;
 
 @SuppressLint("NewApi") 
-public class RegisterView extends Views implements Controlers.ViewChangeListener {
+public class RegisterView extends BaseView implements BaseControler.ViewChangeListener {
 
 	// private Activity mActivity;
 	private RegisterControler registerControler;

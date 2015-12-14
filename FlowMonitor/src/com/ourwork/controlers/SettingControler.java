@@ -9,7 +9,7 @@ import android.app.Activity;
  * @author 邓耀宁
  *
  */
-public class SettingControler extends Controlers{
+public class SettingControler extends BaseControler{
 	/**
 	 * 设置controler的model
 	 * @param activity

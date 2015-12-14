@@ -19,7 +19,7 @@ import android.util.Log;
  * @author 邓耀宁
  *
  */
-public class FindPWDModel extends Models{
+public class FindPWDModel extends BaseModel{
 
 	/**
 	 * 设置相应的handler

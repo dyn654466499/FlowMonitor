@@ -16,15 +16,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.ourwork.adapters.CommentAdapter;
-import com.ourwork.controlers.Controlers;
+import com.ourwork.controlers.BaseControler;
 import com.ourwork.controlers.GoodsControler;
 import com.ourwork.flowmonitor.R;
 import com.ourwork.utils.Commands;
 import com.ourwork.utils.CommonUtils;
 import com.ourwork.utils.DialogUtils;
 
-public class GoodsDetailView extends Views implements
-		Controlers.ViewChangeListener {
+public class GoodsDetailView extends BaseView implements
+		BaseControler.ViewChangeListener {
 	private GoodsControler controler;
 	private TextView textView_goods_detail_evaluates,
 			textView_goods_detail_title_price,

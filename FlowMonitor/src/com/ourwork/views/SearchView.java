@@ -32,7 +32,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ourwork.adapters.SearchHistoryAdapter;
-import com.ourwork.controlers.Controlers;
+import com.ourwork.controlers.BaseControler;
 import com.ourwork.customview.CustomEditText;
 import com.ourwork.flowmonitor.R;
 import com.ourwork.utils.Commands;
@@ -45,7 +45,7 @@ import com.ourwork.utils.SharedPreferenceUtils;
  *
  */
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
-public class SearchView extends Views implements Controlers.ViewChangeListener{
+public class SearchView extends BaseView implements BaseControler.ViewChangeListener{
 	public static final int VOICE_RECOGNITION_REQUEST_CODE = 0;
 	
 	private CustomEditText editText_search_goods;
@@ -131,7 +131,7 @@ public class SearchView extends Views implements Controlers.ViewChangeListener{
         }
         //新建适配器
         String [] from ={"text"};
-        int [] to = {R.id.textView_search_topSearch};
+        int [] to = {R.id.textView_search_topList};
         SimpleAdapter simpleAdapter = new SimpleAdapter(mActivity, data_list, R.layout.goods_search_top, from, to);
         gridView.setAdapter(simpleAdapter);
         gridView.setOnItemClickListener(new OnItemClickListener() {

@@ -4,7 +4,7 @@ import com.ourwork.models.GoodsDetailModel;
 
 import android.app.Activity;
 
-public class GoodsDetailControler extends Controlers{
+public class GoodsDetailControler extends BaseControler{
 
 	public GoodsDetailControler(Activity activity) {
 		super(activity);

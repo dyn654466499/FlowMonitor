@@ -15,7 +15,7 @@ import static com.ourwork.controlers.ControlerState.*;
  * @author 邓耀宁
  *
  */
-public class RegisterModel extends Models{
+public class RegisterModel extends BaseModel{
 
 	public RegisterModel(Handler handler) {
 		super(handler);

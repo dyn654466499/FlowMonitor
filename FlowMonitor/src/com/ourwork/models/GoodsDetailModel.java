@@ -3,7 +3,7 @@ package com.ourwork.models;
 import android.os.Handler;
 import android.os.Message;
 
-public class GoodsDetailModel extends Models{
+public class GoodsDetailModel extends BaseModel{
 
 	public GoodsDetailModel(Handler handler) {
 		super(handler);

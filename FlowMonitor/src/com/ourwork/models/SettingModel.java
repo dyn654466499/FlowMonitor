@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import static com.ourwork.controlers.ControlerState.*;
-public class SettingModel extends Models{
+public class SettingModel extends BaseModel{
 
 	public SettingModel(Handler handler) {
 		super(handler);

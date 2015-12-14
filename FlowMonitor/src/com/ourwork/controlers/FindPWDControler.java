@@ -8,7 +8,7 @@ import android.app.Activity;
  * @author 邓耀宁
  *
  */
-public class FindPWDControler extends Controlers {
+public class FindPWDControler extends BaseControler {
 
 	/**
 	 * 设置controler的model

@@ -28,13 +28,13 @@ import android.widget.SlidingDrawer.OnDrawerCloseListener;
 import android.widget.SlidingDrawer.OnDrawerOpenListener;
 import android.widget.TextView;
 
-import com.ourwork.controlers.Controlers;
+import com.ourwork.controlers.BaseControler;
 import com.ourwork.controlers.LoginControler;
 import com.ourwork.flowmonitor.FindPWDActivity;
 import com.ourwork.flowmonitor.R;
 import com.ourwork.flowmonitor.RegisterActivity;
 
-public class LoginView extends Views implements Controlers.ViewChangeListener{
+public class LoginView extends BaseView implements BaseControler.ViewChangeListener{
 
 	private Button button_sureLogin,button_forgetPWD,button_login_register,button_more_loginOptions;
 	private EditText editText_phone,editText_pwd;

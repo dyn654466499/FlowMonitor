@@ -1,7 +1,7 @@
 package com.ourwork.fragments;
 
 import com.ourwork.flowmonitor.R;
-import com.ourwork.views.Views;
+import com.ourwork.views.BaseView;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

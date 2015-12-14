@@ -8,14 +8,14 @@ import android.app.Activity;
 import android.os.Handler;
 import android.os.Message;
 
-import com.ourwork.models.Models;
+import com.ourwork.models.BaseModel;
 
 /**
  * controler的抽象类，负责向model转发view的业务逻辑计算请求，并通知view改变其状态。
  * @author  邓耀宁
  *
  */
-public abstract class Controlers {
+public abstract class BaseControler {
 	/**
 	 * 
 	 * @author 邓耀宁
@@ -31,7 +31,7 @@ public abstract class Controlers {
     /**
      * model的代理对象，需要相应的子类设置它（多态）
      */
-    protected Models modelDelegate;
+    protected BaseModel modelDelegate;
     /**
      * 与UI线程通信的handler
      */
@@ -45,7 +45,7 @@ public abstract class Controlers {
      */
     private ThreadPoolExecutor executor;
     
-	public Controlers(Activity activity) {
+	public BaseControler(Activity activity) {
 		super();
 		if (executor == null)
 			executor = new ThreadPoolExecutor(2, 5, 3000, TimeUnit.SECONDS,

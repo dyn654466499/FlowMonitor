@@ -11,7 +11,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import com.ourwork.controlers.Controlers;
+import com.ourwork.controlers.BaseControler;
 import com.ourwork.controlers.SettingControler;
 import com.ourwork.flowmonitor.R;
 import com.ourwork.utils.Commands;
@@ -23,7 +23,7 @@ import com.ourwork.utils.DialogUtils;
  * @author 邓耀宁
  *
  */
-public class SettingView extends Views implements Controlers.ViewChangeListener{
+public class SettingView extends BaseView implements BaseControler.ViewChangeListener{
     private SettingControler settingControler;
     
     private Button button_setting_clearCache,button_setting_evaluate,button_setting_inviteFriends;
